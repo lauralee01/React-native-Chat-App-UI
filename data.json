@@ -1,0 +1,41 @@
+{
+    "chat": [
+        {
+            "name": "Laura",
+            "sex": "Female",
+            "occupation": "Web Developer",
+            "image": "laura.png"
+        },
+        {
+            "name": "Joshua",
+            "sex": "Male",
+            "occupation": "Web Developer",
+            "image": "joshua.jpg"
+            
+        },
+        {
+            "name": "HS",
+            "sex": "Devs",
+            "occupation": "UI Designer",
+            "image": "hs.png"
+        },
+        {
+            "name": "SwapSpace",
+            "sex": "Org",
+            "occupation": "Web",
+            "image": "swap.jpg"
+        },
+        {
+            "name": "Pal",
+            "sex": "Male",
+            "occupation": "UX Designer",
+            "image": "pal.jpg"
+        },
+        {
+            "name": "Capeworx",
+            "sex": "Design",
+            "occupation": "Design Consultancy",
+            "image": "logo-blue.png"
+        }
+    ]
+}
