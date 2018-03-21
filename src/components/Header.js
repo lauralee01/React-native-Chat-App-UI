@@ -17,6 +17,7 @@ const styles = {
 	viewStyle: {
 		justifyContent: 'center',
 		alignItems: 'center',
+		height: 60,
 
 	},
 	textStyle: {
