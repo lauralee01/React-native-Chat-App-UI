@@ -3,57 +3,53 @@ import { Text, View, Image } from 'react-native';
 import Box from './Box';
 import BoxSection from './BoxSection';
 
-const ChatInfo = () => {
+const ChatInfo = (props) => {
+	const chat = props.chat;
 	const { name, image } = chat;
 	const { imageStyle, textStyle, viewStyle} = styles;
 	return (
-		<Box>
-			<BoxSection>
-				<View style={viewStyle}>
+		
+			<View>
+				<View style={viewStyle} >
 					<Image 
 						style={imageStyle}
-						source={"/public/img/images/laura.png"}
+						source={require("../../public/img/images/laura.png")}
 					/>
-					<Text>{name}</Text>
+					<Text style={textStyle}>{name}</Text>
 				</View>
-			</BoxSection>
-			<BoxSection>
+			
 				<View style={viewStyle}>
 					<Image
 						style={imageStyle}
-						source={"/public/img/images/joshua.png"}
+						source={require("../../public/img/images/joshua.png")}
 					 />
-					<Text>{name}</Text>
+					<Text style={textStyle}>{name}</Text>
 				</View>
-			</BoxSection>
-			<BoxSection>
+			
 				<View style={viewStyle}>
 					<Image
 						style={imageStyle}
-						source={"/public/img/images/hs.png"}
+						source={require("../../public/img/images/hs.jpg")}
 					 />
-					<Text>{name}</Text>
+					<Text style={textStyle}>{name}</Text>
 				</View>
-			</BoxSection>
-			<BoxSection>
+			
 				<View style={viewStyle}>
 					<Image 
 						style={imageStyle}
-						source={"/public/img/images/swap.jpg"}
+						source={require("../../public/img/images/swap.jpg")}
 					/>
-					<Text>{name}</Text>
+					<Text style={textStyle}>{name}</Text>
 				</View>
-			</BoxSection>
-			<BoxSection>
+			
 				<View style={viewStyle}>
 					<Image 
 						style={imageStyle}
-						source={"/public/img/images/pal.jpg"}
+						source={require("../../public/img/images/pal.jpg")}
 					/>
-					<Text>{name}</Text>
+					<Text style={textStyle}>{name}</Text>
 				</View>
-			</BoxSection>
-		</Box>
+			</View>
 		)
 };
 
@@ -62,16 +58,22 @@ const styles = {
 		height: 50,
 		width: 50,
 		borderRadius: 50,
-		flex: 4
+		flex: 2,
+		margin: 10
 	},
 	textStyle: {
 		fontSize: 20,
-		flex: 6
+		flex: 8,
+		color: '#000',
+		marginTop: 20
 	},
 	viewStyle: {
 		flex: 1,
 		justifyContent: 'center',
-		flexDirection: 'column'
+		flexDirection: 'row',
+		backgroundColor: '#fff',
+		borderBottomWidth: 1,
+		borderColor: '#192f6a'
 	}
 }
 

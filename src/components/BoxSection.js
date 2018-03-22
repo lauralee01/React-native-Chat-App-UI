@@ -11,9 +11,7 @@ const BoxSection = (props) => {
 
 const styles = {
 	containerStyle: {
-		borderbottomWidth: 1,
-		padding: 5,
-		backgroundColor: '#fff',
+		borderBottomWidth: 1,
 		borderColor: '#ddd',
 		position: 'relative'
 	}
