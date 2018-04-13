@@ -64,7 +64,7 @@ const styles = {
 	textStyle: {
 		fontSize: 20,
 		flex: 8,
-		color: '#000',
+		color: '#192f6a',
 		marginTop: 20
 	},
 	viewStyle: {
